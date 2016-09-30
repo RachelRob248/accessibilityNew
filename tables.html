@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Accessibility Tables</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="./index.html">Form</a></li>
+      <li><a href="./alt_text.html">Alt-Text</a></li>
+      <li><a href="./contrast.html">Contrast</a></li>
+      <li><a href="./headings.html">Headings</a></li>
+      <li><a href="./tables.html">Tables</a></li>
+    </ul>
+
+    <div class="content">
+      <h1>Calendar</h1>
+
+      
+        <table>
+            <caption><h2>Table 1</h2></caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope ="col" id="monday">Monday</th>
+                    <th scope ="col" id="tuesday">Tuesday</th>
+                    <th scope ="col" id="wednesday">Wednesday</th>
+                    <th scope ="col" id="thursday">Thursday</th>
+                    <th scope ="col" id="friday">Friday</th>
+                </tr>
+            </thead>
+            <tr>
+            <tbody>
+                <tr>
+                <tr>
+                    <th scope="row" id="8-9">8:00-9:00</th>
+                    <td headers="8-9 monday">Breakfast with Bob</td>
+                    <td headers="8-9 tuesday"> </td>
+                    <td headers="8-9 wednesday"> </td>
+                    <td headers="8-9 thursday"> </td>
+                    <td headers="8-9 friday"> </td>
+                </tr>
+                <tr>
+                    <th scope="row" id="9-10">9:00-10:00</th>
+                    <td headers="9-10 monday"> </td>
+                    <td headers="9-10 tuesday"> </td>
+                    <td headers="9-10 wednesday">Meeting with Stewart</td>
+                    <td headers="9-10 thursday">Run errands</td>
+                    <td headers="9-10 friday">Walk the dog</td>
+                </tr>
+            </tbody>
+        </table>
+      <br>
+
+        <table>
+            <caption><h2>Table 2</h2></caption>
+            <thead>
+                <tr>
+                    <th scope ="col" id="time">Time</th>
+                    <th scope ="col" id="monday">Monday</th>
+                    <th scope ="col" id="tuesday">Tuesday</th>
+                    <th scope ="col" id="wednesday">Wednesday</th>
+                    <th scope ="col" id="thursday">Thursday</th>
+                    <th scope ="col" id="friday">Friday</th>
+                </tr>
+            </thead>
+            <tr>
+            <tbody>
+                <tr>
+                <tr>
+                    <th scope="row" id="8-9" headers="time">8:00-9:00</th>
+                    <td headers="time 8-9 monday">Breakfast with Bob</td>
+                    <td headers="time 8-9 tuesday"> </td>
+                    <td headers="time 8-9 wednesday"> </td>
+                    <td headers="time 8-9 thursday"> </td>
+                    <td headers="time 8-9 friday"> </td>
+                </tr>
+                <tr>
+                    <th scope="row" id="9-10" headers="time">9:00-10:00</th>
+                    <td headers="time 9-10 monday"> </td>
+                    <td headers="time 9-10 tuesday"> </td>
+                    <td headers="time 9-10 wednesday">Meeting with Stewart</td>
+                    <td headers="time 9-10 thursday">Run errands</td>
+                    <td headers="time 9-10 friday">Walk the dog</td>
+                </tr>
+            </tbody>
+        </table>
+      <br />
+    </div>
+
+  </body>
+</html>
